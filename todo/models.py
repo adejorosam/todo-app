@@ -11,6 +11,7 @@ class Category(models.Model):
 
 
 class Task(models.Model):
+    title = models.CharField(max_length=250, blank=True)
     description = models.CharField(max_length=200)
     created = models.DateField(default=timezone.now().strftime("%Y-%m-%d")) # a date
     due_date = models.DateField(default=timezone.now().strftime("%Y-%m-%d")) # a date 

@@ -1,5 +1,5 @@
 from django.contrib import admin
-from todo.models import Category,Task
+from .models import Category,Task
 
 # Register your models here.
 class CategoryAdmin(admin.ModelAdmin):
